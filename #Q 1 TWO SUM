@@ -1,6 +1,6 @@
 #Q 1 TWO SUM:
 
-
+--(Brute Force)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
