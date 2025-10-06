@@ -5,3 +5,18 @@ class Solution {
         return arr[k - 1];              
     }
 };
+
+
+
+
+//largest element
+class Solution {
+  public:
+    int kthLargest(vector<int>& arr, int k) {
+        // Sort the array in descending order
+        sort(arr.begin(), arr.end(), greater<int>());
+        
+        // Return the kth largest element (0-based index)
+        return arr[k - 1];
+    }
+};
