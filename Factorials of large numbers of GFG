@@ -1,0 +1,18 @@
+class Solution {
+public:
+    vector<int> factorial(int n) {
+        long long fact = 1;
+
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+
+        vector<int> digits;
+        string s = to_string(fact);
+        for (char c : s) {
+            digits.push_back(c - '0');
+        }
+
+        return digits;
+    }
+};
